@@ -15,6 +15,7 @@ namespace Cybersecurity_Awareness_Chatbot
     {
         static void Main(string[] args)
         {
+            AudioPlayer.PlayVoiceGreeting("welcome.wav");
 
             SoundPlayer player = new SoundPlayer(Cybersecurity_Awareness_Chatbot.Properties.Resources.welcome);
             player.Play();
