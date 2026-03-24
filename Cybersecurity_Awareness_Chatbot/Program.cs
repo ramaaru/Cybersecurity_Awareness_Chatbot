@@ -15,10 +15,15 @@ namespace Cybersecurity_Awareness_Chatbot
     {
         static void Main(string[] args)
         {
+            // Play a welcome audio greeting when the chatbot starts
             AudioPlayer.PlayVoiceGreeting("welcome.wav");
 
             SoundPlayer player = new SoundPlayer(Cybersecurity_Awareness_Chatbot.Properties.Resources.welcome);
             player.Play();
+
+            
+            // Display a welcome image when the chatbot starts
+            imageDisplay.DisplayWelcomeImage();
         }
     }  
 }
