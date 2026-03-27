@@ -24,6 +24,11 @@ namespace Cybersecurity_Awareness_Chatbot
             
             // Display a welcome image when the chatbot starts
             imageDisplay.DisplayWelcomeImage();
+
+            // Start chatbot
+             ChatBot bot = new ChatBot();
+             bot.ShowLogo();
+             bot.StartChat();
         }
     }  
 }
