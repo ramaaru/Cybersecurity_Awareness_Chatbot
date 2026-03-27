@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace Cybersecurity_Awareness_Chatbot
 {
+    // Handles chatbot interactions, user input, and responses.
     internal class ChatBot
     {
 
@@ -22,7 +23,7 @@ namespace Cybersecurity_Awareness_Chatbot
             }
             Console.WriteLine();
         }
-
+       // Shows chatbot ASCII logo and title.
         public void ShowLogo()
         {
             Console.Clear();
@@ -43,7 +44,7 @@ namespace Cybersecurity_Awareness_Chatbot
             Console.ResetColor();
         }
         
-
+         // Starts the chatbot and continues taking user input until exit.
         public void StartChat()
         {
             Console.ForegroundColor = ConsoleColor.Yellow;
@@ -51,7 +52,7 @@ namespace Cybersecurity_Awareness_Chatbot
             Console.ResetColor();
 
             UserName = Console.ReadLine();
-
+              // Default name if user enters nothing
             if (string.IsNullOrWhiteSpace(UserName))
             {
                 UserName = "User";
@@ -82,7 +83,7 @@ namespace Cybersecurity_Awareness_Chatbot
                 Respond(input);
             }
         }
-
+        // Handles chatbot replies based on keywords in the user's input.
         private void Respond(string input)
         {
             Console.ForegroundColor = ConsoleColor.Cyan;
